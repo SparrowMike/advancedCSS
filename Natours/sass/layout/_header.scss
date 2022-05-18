@@ -15,10 +15,8 @@
     left: 4rem;
   }
   &__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include elementCentered;
+    top: 40%; 
     text-align: center; 
   }
   &__logo {
