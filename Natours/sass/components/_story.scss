@@ -29,13 +29,13 @@
     backface-visibility: hidden;
     transition: all .5s;
   }
-  
+
   &__text {
     transform: skewX(12deg);
   }
 
   &__caption {
-    @include elementCentered;
+    @include absoluteCenter;
     color: $color-white;
     text-transform: uppercase;
     font-size: 1.7;
@@ -49,7 +49,7 @@
     opacity: 1;
     transform: translate(-50%, -50%);
   }
-  
+
   &:hover &__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(.75px) brightness(80%);
