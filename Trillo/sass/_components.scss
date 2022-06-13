@@ -16,6 +16,13 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bg-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -132,7 +139,7 @@
   list-style: none;
   margin-top: 3.5rem;
 
-  @media only screen and(max-width: $bg-medium) {
+  @media only screen and (max-width: $bg-medium) {
     display: flex;
     margin: 0;
   }
@@ -143,12 +150,12 @@
     &:not(:last-child) {
       margin-bottom: .5rem;
 
-      @media only screen and(max-width: $bg-medium) {
+      @media only screen and (max-width: $bg-medium) {
         margin: 0;
       }
     }
-    
-    @media only screen and(max-width: $bg-medium) {
+
+    @media only screen and (max-width: $bg-medium) {
       flex: 1;
     }
   }
@@ -189,12 +196,12 @@
     position: relative;
     z-index: 10;
 
-    @media only screen and(max-width: $bg-medium) {
+    @media only screen and (max-width: $bg-medium) {
       justify-content: center;
       padding: 2rem;
     }
-  
-    @media only screen and(max-width: $bg-small) {
+
+    @media only screen and (max-width: $bg-small) {
       flex-direction: column;
       padding: 1.5rem .5rem;
     }
@@ -206,7 +213,7 @@
     margin-right: 2rem;
     fill: currentColor;
 
-    @media only screen and(max-width: $bg-small) {
+    @media only screen and (max-width: $bg-small) {
       margin-right: 0;
       margin-bottom: .7rem;
       width: 1.5rem;
@@ -224,7 +231,7 @@
   text-align: center;
   padding: 2.5rem;
 
-  @media only screen and(max-width: $bg-medium) {
+  @media only screen and (max-width: $bg-medium) {
     display: none;
   }
 }
@@ -247,7 +254,8 @@
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: var(--line); 
+  border-bottom: var(--line);
+
   &__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -255,7 +263,7 @@
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
 
-    @media only screen and(max-width: $bg-small) {
+    @media only screen and (max-width: $bg-small) {
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
@@ -299,7 +307,7 @@
     align-items: center;
     justify-content: center;
 
-    @media only screen and(max-width: $bg-small) {
+    @media only screen and (max-width: $bg-small) {
       padding: 0 1.5rem;
     }
   }
@@ -309,7 +317,7 @@
     font-weight: 300;
     margin-bottom: -3px;
 
-    @media only screen and(max-width: $bg-small) {
+    @media only screen and (max-width: $bg-small) {
       font-size: 1.8rem;
     }
   }
@@ -317,8 +325,8 @@
   &__rating-count {
     font-size: .8rem;
     text-transform: uppercase;
-  
-    @media only screen and(max-width: $bg-small) {
+
+    @media only screen and (max-width: $bg-small) {
       font-size: 1.8rem;
     }
   }
@@ -345,7 +353,7 @@
 
   &:hover {
     color: var(--color-grey-dark-1);
-    
+
     & span {
       margin-left: 8px;
     }
@@ -426,14 +434,14 @@
 .recommend {
   font-size: 1.3rem;
   color: var(--color-grey-dark-3);
-  
+
   display: flex;
   align-items: center;
 
   &__count {
     margin-right: auto;
   }
-  
+
   &__friends {
     display: flex;
   }
@@ -444,7 +452,7 @@
     width: 4rem;
     border-radius: 50%;
     border: 3px solid #fff;
-  
+
     &:not(:last-child) {
       margin-right: -1.5rem;
     }
@@ -462,7 +470,7 @@
   position: relative;
   overflow: hidden;
 
-  @media only screen and(max-width: $bg-medium) {
+  @media only screen and (max-width: $bg-medium) {
     padding: 2rem;
     margin-bottom: 3rem;
   }
@@ -527,7 +535,7 @@
   padding: 3.5rem 0;
   text-align: center;
 
-  @media only screen and(max-width: $bg-medium) {
+  @media only screen and (max-width: $bg-medium) {
     padding: 2.5rem 0;
   }
 
@@ -550,8 +558,8 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  
-  & > * {
+
+  &>* {
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -578,7 +586,7 @@
   }
 
   &:hover &__invisible {
-    top: 0; 
+    top: 0;
   }
 
   &:focus {
